@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "Tektur";
+    src: url('../fonts/Tektur-VariableFont_wdth\,wght.ttf');
+}
+
+* {
+    font-family: "Tektur", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #040F16;
+    color: #fff;
+}
+
+.auth_container {
+    height: 1080px;
+    background: no-repeat linear-gradient(to bottom, rgb(5, 15, 22, 1) 13%, rgba(0, 0, 0, 0) 63%, rgba(4, 15, 22, 1) 100%),
+    url("../img/auth_background.jpg");
+    /* background: url("../img/auth_background.jpg"); */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    font-size: 30px;
+}
+
+.active_nav {
+    color: #EE014B;
+}
+
+
+/* MAIN */
+#main_header {
+    font-size: 120px;
+    font-weight: 500;
+    letter-spacing: 3%;
+}
+#main_header_span {
+    font-size: 50px;
+    font-weight: 400;
+    background-color: #EE014B;
+    border-radius: 2px;
+    padding: 0 11px;
+}
+
+
+.slogan_block {
+    border-top: 12px solid #EE014B;
+    border-bottom: 12px solid #EE014B;
+}
+
+#slogan_text {
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: 3%;
+}
+
+#slogan_h {
+    color: #EE014B;
+    font-size: 87px;
+}
+
+#slogan_dash {
+    font-size: 87px;
+}
+
+
+#about_img {
+    width: 429px;
+    height: 643px;
+}
+
+#about_header {
+    color: #471FFF;
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: 5%;
+    text-shadow: 5px 1px 20px #2E00FD;
+}
+
+.about_block p {
+    font-size: 31px;
+    line-height: 46px;
+    letter-spacing: 5%;
+}
+
+
+.advantage img {
+    width: 106px;
+    height: 106px;
+}
+
+.advantage p {
+    font-size: 25px;
+    line-height: 46px;
+    letter-spacing: 5%;
+}
+
+
+.clubs_block h2 {
+    font-size: 60px;
+    font-weight: 400;
+}
+.club_card {
+    width: 465px;
+    height: 552px;
+    border: 10px solid #EE014B;
+    border-radius: 7px;
+    text-align: center;
+}
+.club_card img {
+    border-bottom: 5px solid #FBFBFF;
+}
+.club_name {
+    font-size: 32px;
+}
+.club_address {
+    font-size: 22px;
+    letter-spacing: 3%;
+}
+.club_pcs_number {
+    font-size: 30px;
+    font-weight: 600;
+    color: #EE014B;
+}
+.club_card a {
+    /* width: 200px;
+    height: 60px; */
+    padding: 12px 21px;
+    border-radius: 6px;
+    font-size: 28px;
+    font-weight: 500;
+    background: linear-gradient(45deg, #2E00FD 14%, #EE014B);
+}
+
+.all_clubs_link {
+    font-weight: 600;
+    font-size: 28px;
+    padding: 13px 21px;
+    background: linear-gradient(45deg, #EE014B, #ED0764 50%, #EA2DFC);
+    border-radius: 6px;
+}
+
+/* AUTH */
+
+.auth {
+    background: rgba(69, 69, 69, 53%);
+    border-radius: 5px;
+}
+
+.auth_header {
+    font-weight: 600;
+    font-size: 51px;
+    color: #EE014B;
+}
+
+.auth_input {
+    width: 344px;
+    height: 51px;
+    background-color: #FBFBFF;
+    border-radius: 7px;
+    border: none;
+    font-size: 26px;
+    font-weight: 500;
+    padding-left: 24px;
+}
+
+.remember_me {
+
+}
+
+#remember_me_check {
+    width: 32px;
+    height: 32px;
+}
+
+#remember_me_text {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.auth_button {
+    width: 137px;
+    height: 56px;
+    color: #FBFBFF;
+    background: linear-gradient(45deg, #EE014B, #ED0764 60%, #EA2DFC);
+    font-size: 27px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#register_button {
+    width: 344px;
+}

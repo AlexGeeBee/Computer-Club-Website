@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - GOGAME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth_container">
+        <header>
+        <a href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+
+        <nav>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="">Клубы</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="login.html">Войти</a></li>
+            <span>/</span>
+            <li><a class="active_nav" href="register.html">Создать аккаунт</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth">
+            <h1 class="auth_header">Регистрация</h1>
+
+            <form action="#" method="post">
+                <input class="auth_input" type="tel" name="phone" placeholder="Телефон" minlength="4" maxlength="20" required>
+                <input class="auth_input" type="text" name="name" placeholder="Имя" minlength="1" maxlength="25" required>
+                <input class="auth_input" type="password" name="password" placeholder="Пароль" minlength="4" maxlength="20" required>
+                <input class="auth_input" type="password" name="password_repeat" placeholder="Повторите пароль" minlength="7" maxlength="20" required>
+
+                <input class="auth_button" id="register_button" type="submit" value="Зарегистрироваться">
+            </form>
+        </div>
+    </main>
+    </div>
+</body>
+</html>
