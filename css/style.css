@@ -28,9 +28,13 @@ a {
 
 header {
     font-size: 30px;
+    border-bottom: 5px solid #EE014B;
 }
 
-.active_nav {
+.nav_link {
+    transition: 0.15s;
+}
+.active_nav, .nav_link:hover {
     color: #EE014B;
 }
 
@@ -84,7 +88,7 @@ header {
     text-shadow: 5px 1px 20px #2E00FD;
 }
 
-.about_block p {
+.text_default {
     font-size: 31px;
     line-height: 46px;
     letter-spacing: 5%;
@@ -145,7 +149,14 @@ header {
     padding: 13px 21px;
     background: linear-gradient(45deg, #EE014B, #ED0764 50%, #EA2DFC);
     border-radius: 6px;
+    transition: 0.15s;
 }
+.all_clubs_link:hover {
+    background: transparent;
+    border: 3px solid #EE014B;
+    color: #EE014B;
+}
+
 
 /* AUTH */
 
@@ -161,6 +172,7 @@ header {
 }
 
 .auth_input {
+    box-sizing: border-box;
     width: 344px;
     height: 51px;
     background-color: #FBFBFF;
@@ -169,6 +181,10 @@ header {
     font-size: 26px;
     font-weight: 500;
     padding-left: 24px;
+    transition: 0.1s;
+}
+.auth_input:focus {
+    border: 2px solid #EE014B;
 }
 
 .remember_me {
@@ -195,7 +211,79 @@ header {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    transition: 0.15s;
+}
+.auth_button:hover {
+    background: transparent;
+    color: #EE014B;
+    border: 3px solid #EE014B;
 }
 #register_button {
     width: 344px;
+}
+
+
+/* ABOUT */
+
+
+#about_h1 {
+    font-weight: 500;
+    letter-spacing: 3%;
+    font-size: 45px;
+}
+#h1_text {
+    font-size: 75px;
+    color: #EE014B;
+}
+#h1_dash {
+    font-size: 75px;
+    font-weight: 400;
+}
+
+#about_h2 {
+    color: #471FFF;
+    text-shadow: 5px 1px 20px #2E00FD;
+    font-weight: 500;
+    font-size: 45px;
+    letter-spacing: 5%;
+}
+.about_block img {
+    border: 5px solid #EE014B;
+    border-radius: 4px;
+}
+
+#faq_header {
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 5%;
+}
+.question {
+    width: 1166px;
+    height: 78px;
+    border: 3px solid #88012B;
+    border-radius: 3px;
+    padding-left: 23px;
+}
+.question p {
+    font-weight: 500;
+    font-size: 31px;
+    letter-spacing: 5%;
+}
+.question span {
+    font-size: 40px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    border-top: 6px solid #2E00FD;
+}
+.contacts {
+    font-size: 30px;
+    letter-spacing: 5%;
+}
+.year_and_company {
+    font-size: 28px;
 }
