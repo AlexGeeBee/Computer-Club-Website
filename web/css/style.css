@@ -1,0 +1,402 @@
+@font-face {
+    font-family: "Tektur";
+    src: url('../fonts/Tektur-VariableFont_wdth\,wght.ttf');
+}
+
+* {
+    font-family: "Tektur", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #040F16;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+.text-center {
+    text-align: center;
+}
+.left_header {
+    margin: 150px 280px 70px;
+}
+
+
+.purple_header {
+    color: #471FFF;
+    text-shadow: 5px 1px 20px #2E00FD;
+    font-weight: 500;
+    font-size: 55px;
+    letter-spacing: 5%;
+
+    width: 1100px;
+    margin-bottom: 40px;
+}
+.blue-red_border {
+    background: linear-gradient(to bottom, #2E00FD, #EE014B);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.white_header {
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 5%;
+}
+
+
+/* HEADER */
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 30px;
+    border-bottom: 5px solid #EE014B;
+}
+
+#logo {
+    margin-left: 140px;
+    width: 213px;
+    height: 100px;
+}
+header nav {
+    display: flex;
+    column-gap: 75px;
+    margin-right: 60px;
+}
+.nav_link {
+    transition: 0.15s;
+}
+.active_nav, .nav_link:hover {
+    color: #EE014B;
+}
+
+
+/* MAIN */
+.main_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main_header {
+    font-size: 120px;
+    font-weight: 500;
+    letter-spacing: 3%;
+}
+#main_header_span {
+    font-size: 50px;
+    font-weight: 400;
+    background-color: #EE014B;
+    border-radius: 2px;
+    padding: 0 11px;
+}
+
+
+.slogan_block {
+    border-top: 12px solid #EE014B;
+    border-bottom: 12px solid #EE014B;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding-bottom: 15px;
+}
+
+.slogan_text {
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: 3%;
+
+    width: 1500px;
+}
+
+.slogan_h {
+    color: #EE014B;
+    font-size: 87px;
+}
+
+.slogan_dash {
+    font-size: 87px;
+}
+
+.info_block {
+    display: flex;
+    margin: 100px 150px;
+    column-gap: 150px;
+}
+
+#info_img {
+    width: 429px;
+    height: 643px;
+}
+
+.info_text p {
+    width: 960px;
+}
+
+.text_default {
+    /* margin-top: 40px; */
+
+    font-size: 31px;
+    line-height: 46px;
+    letter-spacing: 5%;
+}
+
+
+.advantages_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.advantage {
+    width: 500px;
+}
+.advantage img {
+    width: 106px;
+    height: 106px;
+}
+
+.advantage p {
+    font-size: 25px;
+    line-height: 46px;
+    letter-spacing: 5%;
+}
+
+
+
+.clubs_list {
+    display: flex;
+    justify-content: center;
+    column-gap: 90px;
+}
+.club_card {
+    width: 465px;
+    height: 552px;
+    border: 10px solid #EE014B;
+    border-radius: 7px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.club_card img {
+    border-bottom: 5px solid #FBFBFF;
+}
+.club_name {
+    font-size: 32px;
+}
+.club_address {
+    font-size: 22px;
+    letter-spacing: 3%;
+}
+.club_pcs_number {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    font-weight: 600;
+    color: #EE014B;
+}
+.club_card a {
+    /* width: 200px;
+    height: 60px; */
+    padding: 12px 21px;
+    border-radius: 6px;
+    font-size: 28px;
+    font-weight: 500;
+    background: linear-gradient(45deg, #2E00FD 14%, #EE014B);
+}
+
+.all_clubs_link {
+    font-weight: 600;
+    font-size: 28px;
+    padding: 13px 21px;
+    background: linear-gradient(45deg, #EE014B, #ED0764 50%, #EA2DFC);
+    border-radius: 6px;
+    transition: 0.15s;
+}
+.all_clubs_link:hover {
+    background: transparent;
+    border: 3px solid #EE014B;
+    color: #EE014B;
+}
+
+
+/* AUTH */
+
+
+.auth_container {
+    height: 1080px;
+    background: no-repeat linear-gradient(to bottom, rgb(5, 15, 22, 1) 13%, rgba(0, 0, 0, 0) 63%, rgba(4, 15, 22, 1) 100%),
+    url("../img/auth_background.jpg");
+    /* background: url("../img/auth_background.jpg"); */
+}
+.auth_container main {
+    display: flex;
+    justify-content: center;
+}
+.auth {
+    background: rgba(69, 69, 69, 53%);
+    border-radius: 5px;
+
+    margin-top: 130px;
+    padding: 45px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.auth form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth_header {
+    margin-bottom: 75px;
+
+    font-weight: 600;
+    font-size: 51px;
+    color: #EE014B;
+}
+
+.auth_input {
+    box-sizing: border-box;
+    width: 344px;
+    height: 51px;
+    margin-bottom: 50px;
+
+    background-color: #FBFBFF;
+    border-radius: 7px;
+    border: none;
+    font-size: 26px;
+    font-weight: 500;
+    padding-left: 24px;
+    transition: 0.1s;
+}
+.auth_input:focus {
+    border: 2px solid #EE014B;
+}
+
+.remember_me {
+    display: flex;
+    column-gap: 18px;
+}
+
+#remember_me_check {
+    accent-color: white;
+    width: 32px;
+    height: 32px;
+}
+
+#remember_me_text {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.auth_button {
+    margin-top: 60px;
+    width: 137px;
+    height: 56px;
+    color: #FBFBFF;
+    background: linear-gradient(45deg, #EE014B, #ED0764 60%, #EA2DFC);
+    font-size: 27px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.auth_button:hover {
+    background: transparent;
+    color: #EE014B;
+    border: 3px solid #EE014B;
+}
+#register_button {
+    width: 344px;
+    margin-top: 10px;
+}
+
+
+/* ABOUT */
+
+.about {
+    margin: 50px 150px;
+}
+.about_block {
+    display: flex;
+    column-gap: 250px;
+    margin-top: 150px;
+}
+.about_block_text {
+    width: 800px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin-top: 50px;
+}
+.question {
+    width: 1166px;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 3px solid #88012B;
+    border-radius: 3px;
+    padding-left: 23px;
+}
+.question p {
+    font-weight: 500;
+    font-size: 31px;
+    letter-spacing: 5%;
+}
+.question span {
+    font-size: 40px;
+    margin-right: 25px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    border-top: 6px solid #2E00FD;
+    padding-top: 20px;
+    margin-top: 300px;
+}
+.contacts {
+    display: flex;
+    justify-content: center;
+    column-gap: 130px;
+
+    font-size: 30px;
+    letter-spacing: 5%;
+}
+.contact {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.year_and_company {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    margin-top: 20px;
+
+    font-size: 28px;
+}
