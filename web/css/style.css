@@ -76,10 +76,15 @@ header nav {
     margin-right: 60px;
 }
 .nav_link {
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 0.15s;
 }
 .active_nav, .nav_link:hover {
-    color: #EE014B;
+    background: linear-gradient(90deg, #EE014B, #EA2DFC);
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
 }
 
 
@@ -87,6 +92,14 @@ header nav {
 .main_block {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 978px;
+    /* background-image: linear-gradient(rgba(4, 15, 22, 1) 7%, rgba(4, 15, 22, 0) 63%, rgba(4, 15, 22, 1) 100%), url('/web/img/slider_1.jpg'); */
+    background-image: url("/web/img/slider1_group.jpg");
+}
+.main_block img {
+    width: 38px;
+    height: 99px;
 }
 
 #main_header {
@@ -160,6 +173,7 @@ header nav {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    row-gap: 80px;
 }
 .advantage {
     width: 500px;
