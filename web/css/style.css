@@ -31,7 +31,7 @@ li {
     text-shadow: 5px 1px 20px #2E00FD;
     font-weight: 500;
     font-size: 55px;
-    letter-spacing: 5%;
+    letter-spacing: 3px;
 
     width: 1100px;
     margin-bottom: 40px;
@@ -45,7 +45,6 @@ li {
 .white_header {
     font-weight: 400;
     font-size: 60px;
-    letter-spacing: 5%;
 }
 
 
@@ -62,7 +61,10 @@ header {
     align-items: center;
 
     font-size: 30px;
+    font-weight: 500;
     border-bottom: 5px solid #EE014B;
+    border-image: linear-gradient(to right, #EE014B 53%, #2E00FD 100%);
+    border-image-slice: 1;
 }
 
 #logo {
@@ -79,7 +81,7 @@ header nav {
     background: #fff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: 0.15s;
+    transition: 0.5s;
 }
 .active_nav, .nav_link:hover {
     background: linear-gradient(90deg, #EE014B, #EA2DFC);
@@ -89,25 +91,33 @@ header nav {
 
 
 /* MAIN */
+
 .main_block {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 978px;
+    padding: 0 20px;
     /* background-image: linear-gradient(rgba(4, 15, 22, 1) 7%, rgba(4, 15, 22, 0) 63%, rgba(4, 15, 22, 1) 100%), url('/web/img/slider_1.jpg'); */
     background-image: url("/web/img/slider1_group.jpg");
 }
 .main_block img {
     width: 38px;
     height: 99px;
+    position: relative;
+    top: -40px;
 }
-
+.main_header {
+    position: relative;
+    top: -140px;
+    margin-right: 500px;
+}
 #main_header {
     font-size: 120px;
     font-weight: 500;
-    letter-spacing: 3%;
+    letter-spacing: 3px;
 }
-#main_header_span {
+#main_header2 {
     font-size: 50px;
     font-weight: 400;
     background-color: #EE014B;
@@ -119,6 +129,8 @@ header nav {
 .slogan_block {
     border-top: 12px solid #EE014B;
     border-bottom: 12px solid #EE014B;
+    border-image: linear-gradient(to right, #88012B 0%, #EE014B 50%, #88012B 100%);
+    border-image-slice: 1;
 
     display: flex;
     justify-content: center;
@@ -130,7 +142,6 @@ header nav {
 .slogan_text {
     font-weight: 500;
     font-size: 60px;
-    letter-spacing: 3%;
 
     width: 1500px;
 }
@@ -164,7 +175,7 @@ header nav {
 
     font-size: 31px;
     line-height: 46px;
-    letter-spacing: 5%;
+    letter-spacing: 2px;
 }
 
 
@@ -174,10 +185,38 @@ header nav {
     justify-content: center;
     text-align: center;
     row-gap: 80px;
+    margin-top: 200px;
 }
 .advantage {
     width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+    transition: 0.1s;
 }
+.advantage::before {
+    content: "";
+
+    display: none;
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #2E00FD;
+    position: absolute;
+    filter: blur(40px);
+    z-index: -1;
+}
+.advantage:hover {
+    transform: scale(1.15);
+    text-shadow: 3px 3px 5px #9D9D9D;
+}
+.advantage:hover::before {
+    display: inline;
+}
+
 .advantage img {
     width: 106px;
     height: 106px;
@@ -186,7 +225,9 @@ header nav {
 .advantage p {
     font-size: 25px;
     line-height: 46px;
-    letter-spacing: 5%;
+    letter-spacing: 2px;
+    
+    width: 400px;
 }
 
 
@@ -199,10 +240,18 @@ header nav {
 .club_card {
     width: 465px;
     height: 552px;
-    border: 10px solid #EE014B;
-    border-radius: 7px;
+    border: 10px solid transparent;
+    background: linear-gradient(#040F16, #040F16 0) padding-box, linear-gradient(45deg, #2E00FD, #EE014B) border-box;
+    border-radius: 6px;
     text-align: center;
     margin-bottom: 100px;
+    transition: 0.1s;
+}
+.club_card:hover {
+    transform: scale(1.08);
+    /* box-shadow: -10px 10px 40px 8px #2E00FD, 10px -10px 40px 8px #EE014B; */
+    box-shadow: 0 0 40px 15px #B528F6;
+
 }
 .club_card img {
     border-bottom: 5px solid #FBFBFF;
@@ -212,7 +261,6 @@ header nav {
 }
 .club_address {
     font-size: 22px;
-    letter-spacing: 3%;
 }
 .club_pcs_number {
     margin-top: 30px;
@@ -230,6 +278,17 @@ header nav {
     font-size: 28px;
     font-weight: 500;
     background: linear-gradient(45deg, #2E00FD 14%, #EE014B);
+    transition: 0.15s;
+}
+
+.club_card a:hover {
+    /* border: 3px solid transparent; */
+    /* background: linear-gradient(#040F16, #040F16 0) padding-box, linear-gradient(45deg, #EE014B 0%, #2E00FD 86%) border-box; */
+
+    border: 3px solid #93009A;
+    background: linear-gradient(45deg, #EE014B 0%, #2E00FD 86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .all_clubs_link {
@@ -241,9 +300,14 @@ header nav {
     transition: 0.15s;
 }
 .all_clubs_link:hover {
-    background: transparent;
     border: 3px solid #EE014B;
-    color: #EE014B;
+    background: linear-gradient(90deg, #EE014B, #EA2DFC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* border: 3px solid #EE014B;
+    background: transparent;
+    color: #EE014B; */
 }
 
 
@@ -350,7 +414,8 @@ header nav {
 .about_block {
     display: flex;
     column-gap: 250px;
-    margin-top: 150px;
+    margin-top: 50px;
+    margin-bottom: 150px;
 }
 .about_block_text {
     width: 800px;
@@ -370,14 +435,22 @@ header nav {
     justify-content: space-between;
     align-items: center;
 
-    border: 3px solid #88012B;
+    /* border: 3px solid #88012B; */
+    border: 3px solid transparent;
+    background: linear-gradient(#040F16, #040F16 0) padding-box, linear-gradient(to right, #88012B 0%, #2E00FD 35%, #88012B 100%) border-box;
     border-radius: 3px;
     padding-left: 23px;
+    cursor: pointer;
+
+    transition: 0.15s;
+}
+.question:hover {
+    background: linear-gradient(to right, #4F0723 0%, #1A088A 35%, #4F0723 100%) padding-box, linear-gradient(to right, #88012B 0%, #2E00FD 35%, #88012B 100%) border-box;
 }
 .question p {
     font-weight: 500;
     font-size: 31px;
-    letter-spacing: 5%;
+    letter-spacing: 1px;
 }
 .question span {
     font-size: 40px;
@@ -399,7 +472,7 @@ footer {
     column-gap: 130px;
 
     font-size: 30px;
-    letter-spacing: 5%;
+    letter-spacing: 2px;
 }
 .contact {
     display: flex;
