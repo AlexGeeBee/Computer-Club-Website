@@ -30,7 +30,7 @@ li {
     color: #471FFF;
     text-shadow: 5px 1px 20px #2E00FD;
     font-weight: 500;
-    font-size: 55px;
+    font-size: 50px;
     letter-spacing: 3px;
 
     width: 1100px;
@@ -79,15 +79,61 @@ header nav {
 }
 .nav_link {
     background: #fff;
+    background-clip: text;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+    transition: all 0.5s;
+}
+.active_nav {
+    background: linear-gradient(90deg, #EE014B, #EA2DFC);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: 0.5s;
 }
-.active_nav, .nav_link:hover {
-    background: linear-gradient(90deg, #EE014B, #EA2DFC);
+.nav_link:hover {
+    background-image: linear-gradient(90deg, #EE014B, #EA2DFC);
+    background-clip: text;
     -webkit-background-clip: text;
-    /* -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
+    /* animation: text-gradient 2s linear ;
+    animation-fill-mode: forwards; */
 }
+
+
+
+/* @keyframes text-gradient {
+    0% {
+        background: #fff;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    25% {
+        background: linear-gradient(90deg, #ee014c3e, #eb2dfc33);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    50% {
+        background: linear-gradient(90deg, #ee014c72, #eb2dfc75);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    70% {
+        background: linear-gradient(90deg, #ee014cca, #eb2dfcc8);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(90deg, #ee014c, #eb2dfc);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+} */
+
 
 
 /* MAIN */
@@ -172,12 +218,12 @@ header nav {
 
 .text_default {
     /* margin-top: 40px; */
+    margin-bottom: 50px;
 
-    font-size: 31px;
+    font-size: 29px;
     line-height: 46px;
     letter-spacing: 2px;
 }
-
 
 .advantages_block {
     display: flex;
@@ -194,27 +240,31 @@ header nav {
     align-items: center;
     row-gap: 10px;
 
-    transition: 0.1s;
+    transition: 0.2s;
 }
 .advantage::before {
     content: "";
 
-    display: none;
+    /* display: none; */
+    opacity: 0;
 
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: #2E00FD;
     position: absolute;
     filter: blur(40px);
     z-index: -1;
+
+    transition: 0.2s;
 }
 .advantage:hover {
     transform: scale(1.15);
     text-shadow: 3px 3px 5px #9D9D9D;
 }
 .advantage:hover::before {
-    display: inline;
+    /* display: inline; */
+    opacity: 1;
 }
 
 .advantage img {
@@ -245,10 +295,10 @@ header nav {
     border-radius: 6px;
     text-align: center;
     margin-bottom: 100px;
-    transition: 0.1s;
+    transition: 0.15s;
 }
 .club_card:hover {
-    transform: scale(1.08);
+    transform: scale(1.1);
     /* box-shadow: -10px 10px 40px 8px #2E00FD, 10px -10px 40px 8px #EE014B; */
     box-shadow: 0 0 40px 15px #B528F6;
 
@@ -296,8 +346,9 @@ header nav {
     font-size: 28px;
     padding: 13px 21px;
     background: linear-gradient(45deg, #EE014B, #ED0764 50%, #EA2DFC);
+    /* background-color: #EE014B; */
     border-radius: 6px;
-    transition: 0.15s;
+    transition: 0.2s;
 }
 .all_clubs_link:hover {
     border: 3px solid #EE014B;
@@ -442,7 +493,7 @@ header nav {
     padding-left: 23px;
     cursor: pointer;
 
-    transition: 0.15s;
+    transition: all 1s;
 }
 .question:hover {
     background: linear-gradient(to right, #4F0723 0%, #1A088A 35%, #4F0723 100%) padding-box, linear-gradient(to right, #88012B 0%, #2E00FD 35%, #88012B 100%) border-box;
@@ -452,8 +503,7 @@ header nav {
     font-size: 31px;
     letter-spacing: 1px;
 }
-.question span {
-    font-size: 40px;
+.question img {
     margin-right: 25px;
 }
 
@@ -481,9 +531,10 @@ footer {
 }
 .year_and_company {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     column-gap: 100px;
-    margin-top: 20px;
+    margin-top: 40px;
 
     font-size: 28px;
 }
