@@ -47,6 +47,21 @@ li {
     font-size: 60px;
 }
 
+.width-700 {
+    width: 670px;
+}
+
+.text_default {
+    /* margin-top: 40px; */
+    margin-bottom: 50px;
+
+    font-size: 30px;
+    line-height: 46px;
+    letter-spacing: 2px;
+}
+
+
+
 
 /* HEADER */
 
@@ -210,19 +225,11 @@ header nav {
 #info_img {
     width: 429px;
     height: 643px;
+    margin-top: 10px;
 }
 
 .info_text p {
     width: 960px;
-}
-
-.text_default {
-    /* margin-top: 40px; */
-    margin-bottom: 50px;
-
-    font-size: 29px;
-    line-height: 46px;
-    letter-spacing: 2px;
 }
 
 .advantages_block {
@@ -353,6 +360,7 @@ header nav {
 .all_clubs_link:hover {
     border: 3px solid #EE014B;
     background: linear-gradient(90deg, #EE014B, #EA2DFC);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -360,6 +368,10 @@ header nav {
     background: transparent;
     color: #EE014B; */
 }
+
+
+
+
 
 
 /* AUTH */
@@ -457,6 +469,10 @@ header nav {
 }
 
 
+
+
+
+
 /* ABOUT */
 
 .about {
@@ -485,27 +501,148 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
-    /* border: 3px solid #88012B; */
     border: 3px solid transparent;
     background: linear-gradient(#040F16, #040F16 0) padding-box, linear-gradient(to right, #88012B 0%, #2E00FD 35%, #88012B 100%) border-box;
     border-radius: 3px;
-    padding-left: 23px;
+    /* padding: 0 23px; */
     cursor: pointer;
-
-    transition: all 1s;
+    overflow: hidden;
 }
-.question:hover {
+.question * {
+    z-index: 1;
+}
+.question::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+
+
     background: linear-gradient(to right, #4F0723 0%, #1A088A 35%, #4F0723 100%) padding-box, linear-gradient(to right, #88012B 0%, #2E00FD 35%, #88012B 100%) border-box;
+    opacity: 0;
+    
+    transition: 0.2s;
+}
+.question:hover::before {
+    opacity: 1;
 }
 .question p {
     font-weight: 500;
     font-size: 31px;
     letter-spacing: 1px;
+    margin-left: 25px;
 }
 .question img {
     margin-right: 25px;
 }
+
+
+
+
+
+
+
+
+
+
+/* BOOKING */
+
+
+.booking_container {
+    display: flex;
+    justify-content: center;
+}
+.booking_form {
+    margin-top: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    width: 760px;
+    row-gap: 10px;
+}
+.booking_input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.booking_input select, .booking_input input {
+    height: 66px;
+    background-color: transparent;
+    border: 3px solid #3A19FF;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 26px;
+    padding: 0 18px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.booking_select::after {
+    content: '';
+    background-image: url('/web/img/arrow.svg');
+    width: 42px;
+    height: 18px;
+    position: relative;
+    left: 92%;
+    bottom: 48px;
+    z-index: -1;
+}
+
+#date_input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.booking_form option {
+    background-color: #1E00A5;
+}
+.booking_form label {
+    font-size: 30px;
+}
+.date_time {
+    display: flex;
+    justify-content: space-between;
+}
+.datetime_input {
+    width: 374px;
+}
+.booking_button {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 60px;
+    width: 305px;
+    height: 80px;
+    background: linear-gradient(to right, #1B0097 0%, #2E00FD 50%, #1B0097 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: center;
+    position: relative;
+    z-index: 1;
+
+    transition: 0.5s;
+}
+.booking_button:hover {
+    background: transparent;
+    color: #2E00FD;
+    border: 4px solid #2E00FD;
+}
+
+
+
+
+
+
+
+/* CLUBS */
+
+
+
+
 
 
 

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - GOGAME</title>
+    <link rel="stylesheet" href="/web/css/style.css">
+</head>
+<body>
+    <header>
+        <a id="logo" href="index.html"><img src="web/img/logo.svg" alt="Логотип"></a>
+
+        <nav>
+            <li><a class="nav_link" href="index.html">Главная</a></li>
+            <li><a class="nav_link" href="clubs.html">Клубы</a></li>
+            <li><a class="nav_link" href="about.html">О нас</a></li>
+            <li>
+                <a class="nav_link" href="login.html">Войти</a>
+                <span>/</span>
+                <a class="nav_link" href="register.html">Создать аккаунт</a>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+        <div class="booking_container">
+            <form class="booking_form" action="account.html" method="post">
+            <h1 class="white_header text-center">Бронирование</h1>
+
+            
+            <div class="booking_input booking_select">
+                <label for="club">Клуб</label>
+
+                <select name="club">
+                    <option value="Ст. метро Петроградская, ул. Ординарная, 20">Ст. метро Петроградская, ул. Ординарная, 20</option>
+                    <option value="Ст. метро Электросила, ул. Благодатная 40">Ст. метро Электросила, ул. Благодатная 40</option>
+                    <option value="Ст. метро Василеостровская, 13-я линия ВО, 30">Ст. метро Василеостровская, 13-я линия ВО, 30</option>
+                    <option value="Ст. метро Площадь Ленина, ул. Комсомола, 17">Ст. метро Площадь Ленина, ул. Комсомола, 17</option>
+                    <option value="Ст. метро Беговая, ул. Савушкина, 141">Ст. метро Беговая, ул. Савушкина, 141</option>
+                    <option value="Ст. метро Бухарестская, ул. Салова, 61">Ст. метро Бухарестская, ул. Салова, 61</option>
+                </select>
+            </div>
+
+
+            <div class="booking_input booking_select">
+                <label for="zone">Зона</label>
+
+                <select name="zone">
+                    <option value="standart">Standart</option>
+                    <option value="vip">VIP</option>
+                    <option value="bootcamp">Bootcamp</option>
+                </select>
+            </div>
+
+
+            <div class="booking_input booking_select">
+                <label for="rate">Тариф</label>
+
+                <select name="rate">
+                    <option value="1_hour">1 час - 120 руб.</option>
+                    <option value="3_hours">3 часа - 300 руб.</option>
+                    <option value="5_hours">5 часов - 490 руб.</option>
+                </select>
+            </div>
+
+
+            <div class="date_time">
+                <div class="booking_input datetime_input">
+                    <label for="date">Дата</label>
+                    <input type="date" name="date" id="date_input">
+                </div>
+
+                <div class="booking_input datetime_input">
+                    <label for="time">Время</label>
+                    <input type="time" name="time" id="time_input" step="3600">
+                </div>
+            </div>
+
+            <input class="booking_button" type="submit" value="Забронировать">
+        </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contacts">
+            <div class="contact">
+                <img src="web/img/contact_phone.svg" alt="Иконка телефона">
+                <p>+7(953)-849-62-24</p>
+            </div>
+
+            <div class="contact">
+                <img src="web/img/contact_email.svg" alt="Иконка email">
+                <p>gogameclub@gmail.com</p>
+            </div>
+
+            <div class="contact">
+                <img src="web/img/contact_telegram.svg" alt="Иконка телеграма">
+                <p>@gogame_admin</p>
+            </div>
+        </div>
+
+        <div class="year_and_company">
+            <p>2025</p>
+            <p>GOGAME</p>
+        </div>
+    </footer>
+</body>
+</html>
