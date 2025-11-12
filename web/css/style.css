@@ -84,7 +84,7 @@ header {
 }
 
 #logo {
-    margin-left: 140px;
+    margin-left: 7%;
     width: 213px;
     height: 100px;
 }
@@ -112,43 +112,11 @@ header nav {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* animation: text-gradient 2s linear ;
-    animation-fill-mode: forwards; */
 }
 
 
 
-/* @keyframes text-gradient {
-    0% {
-        background: #fff;
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
 
-    25% {
-        background: linear-gradient(90deg, #ee014c3e, #eb2dfc33);
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
-
-    50% {
-        background: linear-gradient(90deg, #ee014c72, #eb2dfc75);
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
-
-    70% {
-        background: linear-gradient(90deg, #ee014cca, #eb2dfcc8);
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
-
-    100% {
-        background: linear-gradient(90deg, #ee014c, #eb2dfc);
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
-} */
 
 
 
@@ -171,8 +139,9 @@ header nav {
 }
 .main_header {
     position: relative;
-    top: -140px;
-    margin-right: 500px;
+    /* top: -140px; */
+    top: -15%;
+    margin-right: 25%;
 }
 #main_header {
     font-size: 120px;
@@ -745,4 +714,69 @@ footer {
     margin-top: 40px;
 
     font-size: 28px;
+}
+
+
+
+
+
+
+.info_block-phone{
+    display: none;
+}
+
+
+
+@media (max-width: 375px) {
+
+
+}
+
+@media (max-width: 720px) {
+    .main_block {
+        padding: 0 10px;
+    }
+    .main_block img {
+        display: none;
+    }
+    
+    
+    .main_header {
+        margin: 0;
+    }
+
+    #main_header {
+        font-size: 53px;
+    }
+
+    #main_header2 {
+        font-size: 32px;
+    }
+
+
+
+    .slogan_block {
+        text-align: left;
+        padding: 0 12px;
+    }
+    .slogan_h {
+        font-size: 58px;
+    }
+    .slogan_text, .slogan_dash {
+        font-size: 25px;
+    }
+
+
+    
+    .info_block {
+        display: none;
+    }
+    .info_block-phone{
+        display: block;
+        margin-top: 70px;
+    }
+    .purple_header {
+        font-size: 30px;
+        width: auto;
+    }
 }
