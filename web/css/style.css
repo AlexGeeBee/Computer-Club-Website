@@ -24,6 +24,11 @@ li {
 .left_header {
     margin: 0px 280px 70px;
 }
+.white_header {
+    font-weight: 400;
+    font-size: 60px;
+    margin-top: 50px;
+}
 
 
 .purple_header {
@@ -42,15 +47,6 @@ li {
     padding: 5px;
 }
 
-.white_header {
-    font-weight: 400;
-    font-size: 60px;
-    margin-top: 50px;
-}
-
-.width-700 {
-    width: 670px;
-}
 
 .text_default {
     /* margin-top: 40px; */
@@ -263,6 +259,7 @@ header nav {
     display: flex;
     justify-content: center;
     column-gap: 90px;
+    flex-wrap: wrap;
 }
 .club_card {
     width: 465px;
@@ -460,17 +457,31 @@ header nav {
 .about_block_text {
     width: 800px;
 }
-
+.about_block img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+#about_img_1 {
+    width: 390px;
+    height: 585px;
+}
+#about_img_2 {
+    width: 390px;
+    height: 512px;
+}
 .questions {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
     margin-top: 50px;
+    padding: 0 14px;
 }
 .question {
-    width: 1166px;
-    height: 78px;
+    max-width: 1166px;
+    width: 100%;
+    padding: 16px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -510,6 +521,7 @@ header nav {
 }
 .question img {
     margin-right: 25px;
+    margin-left: 10px;
 }
 
 
@@ -696,6 +708,7 @@ footer {
 .contacts {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     column-gap: 130px;
 
     font-size: 30px;
@@ -729,8 +742,64 @@ footer {
 
 @media (max-width: 375px) {
 
+    
+    .question img {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+    .question p {
+        margin-left: 8px;
+    }
+    .white_header {
+        font-size: 50px;
+    }
 
 }
+
+
+
+@media (max-width: 509px) {
+
+    .club_card, .club_card img {
+        width: 335px;
+    }
+    .club_card {
+        height: 484px;
+        border-width: 8px;
+    }
+    .club_name {
+        font-size: 29px;
+    }
+    .club_address {
+        font-size: 20px;
+    }
+    .club_pcs_number {
+        margin-top: 60px;
+        font-size: 26px;
+    }
+    .club_link, .all_clubs_link {
+        font-size: 24px;
+    }
+
+
+
+
+    
+    .contact img {
+        width: 56px;
+        height: 56px;
+    }
+    .contact {
+        font-size: 21px;
+        column-gap: 12px;
+    }
+    .year_and_company {
+        font-size: 24px;
+    }
+}
+
+
 
 @media (max-width: 720px) {
     .main_block {
@@ -764,6 +833,7 @@ footer {
     }
     .slogan_text, .slogan_dash {
         font-size: 25px;
+        width: auto;
     }
 
 
@@ -772,11 +842,86 @@ footer {
         display: none;
     }
     .info_block-phone{
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin-top: 70px;
+        padding: 0 12px;
     }
     .purple_header {
         font-size: 30px;
         width: auto;
+    }
+    .info_block-phone img {
+        width: 351px;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+    .text_default {
+        font-size: 23px;
+        line-height: 35px;
+    }
+    .advantages_block {
+        margin: 100px 0 150px;
+        padding: 0 12px;
+    }
+    .advantage p {
+        font-size: 23px;
+        width: auto;
+    }
+
+
+
+    .left_header {
+        text-align: center;
+        margin: 0;
+        font-size: 45px;
+    }
+    .clubs_list {
+        margin-top: 75px;
+    }
+
+    
+
+
+    .contacts {
+        justify-content: flex-start;
+        row-gap: 20px;
+        padding: 0 10px;
+    }
+
+
+
+    /* ABOUT */
+    .about {
+        margin: 50px 0;
+        padding: 0 12px;
+    }
+    .about_block {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    .about_block_2 {
+        flex-direction: column-reverse;
+    }
+    .about_block img {
+        align-self: center;
+    }
+    #about_img_1 {
+        max-width: 390px;
+        max-height: 585px;
+        width: 100%;
+        height: 100%;
+    }
+    #about_img_2 {
+        max-width: 390px;
+        max-height: 512px;
+        width: 100%;
+        height: 100%;
+    }
+    .about_block_text {
+        width: auto;
+    }
+    .question p {
+        font-size: 23px;
     }
 }
