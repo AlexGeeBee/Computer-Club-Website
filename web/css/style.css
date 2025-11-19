@@ -29,7 +29,12 @@ li {
     font-size: 60px;
     margin-top: 50px;
 }
-
+.yellow_text {
+    color: #FFBD30;
+}
+.success_text {
+    color: #4AFF86;
+}
 
 .purple_header {
     color: #471FFF;
@@ -123,21 +128,20 @@ header nav {
     justify-content: space-between;
     align-items: center;
     height: 978px;
-    padding: 0 20px;
-    /* background-image: linear-gradient(rgba(4, 15, 22, 1) 7%, rgba(4, 15, 22, 0) 63%, rgba(4, 15, 22, 1) 100%), url('/web/img/slider_1.jpg'); */
-    background-image: url("/web/img/slider1_group.jpg");
+    /* padding: 0 20px; */
+    /* background-image: url("/web/img/slider1_group.jpg"); */
 }
-.main_block img {
+/* .main_block img {
     width: 38px;
     height: 99px;
     position: relative;
     top: -40px;
-}
+} */
 .main_header {
-    position: relative;
-    /* top: -140px; */
-    top: -15%;
-    margin-right: 25%;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    z-index: 2;
 }
 #main_header {
     font-size: 120px;
@@ -150,6 +154,11 @@ header nav {
     background-color: #EE014B;
     border-radius: 2px;
     padding: 0 11px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 5rem;
+    height: 5rem;
 }
 
 
@@ -264,6 +273,7 @@ header nav {
 .club_card {
     width: 465px;
     height: 552px;
+    box-sizing: content-box;
     border: 10px solid transparent;
     background: linear-gradient(#040F16, #040F16 0) padding-box, linear-gradient(45deg, #2E00FD, #EE014B) border-box;
     border-radius: 6px;
@@ -282,6 +292,7 @@ header nav {
     border-bottom: 5px solid #FBFBFF;
 }
 .club_name {
+    margin: 0;
     font-weight: 400;
     font-size: 32px;
 }
@@ -289,8 +300,7 @@ header nav {
     font-size: 22px;
 }
 .club_pcs_number {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0 20px;
 
     font-size: 30px;
     font-weight: 600;
@@ -729,6 +739,60 @@ footer {
     font-size: 28px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* ACCOUNT */
+
+.account {
+    background-image: url('/web/img/account_background.jpg');
+    padding: 0 150px;
+}
+.account__data {
+    display: flex;
+    column-gap: 220px;
+    margin-top: 40px;
+
+    text-wrap: nowrap;
+}
+.account__data div {
+    display: flex;
+    font-size: 33px;
+    column-gap: 30px;
+}
+.account__img {
+    cursor: pointer;
+}
+
+.bookings h2 {
+    margin-top: 100px;
+}
+
+.bookings__table {
+    margin-top: 60px;
+}
+
+.bookings__table__row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.bookings__table__header {
+    border-bottom: 4px solid white;
+    padding: 0 30px 12px;
+
+    font-size: 30px;
+    font-weight: 500;
+}
 
 
 

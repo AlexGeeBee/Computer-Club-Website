@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная - GOGAME</title>
-    
+
     <link rel="icon" type="image/x-icon" href="/web/img/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="/web/css/style.css">
+
 </head>
 
 <body>
@@ -27,7 +30,7 @@
     </header>
 
     <main>
-        <div class="main_block">
+        <!-- <div class="main_block">
             <img src="web/img/slider_arrow_left.svg" alt="left slider arrow">
 
             <div class="main_header">
@@ -36,6 +39,57 @@
             </div>
 
             <img src="web/img/slider_arrow_right.svg" alt="right slider arrow">
+        </div> -->
+
+        <div class="main_block">
+
+            <div class="main_header">
+                <h1 id="main_header">GOGAME</h1>
+                <h2 id="main_header2">Сеть компьютерных клубов</h2>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="web/img/slider1_group.jpg" class="d-block w-100" alt="фото компьютерного клуба">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="web/img/slider2_group.jpg" class="d-block w-100" alt="фото компьютерного клуба">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="web/img/slider3_group.jpg" class="d-block w-100" alt="фото компьютерного клуба">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="web/img/slider4_group.jpg" class="d-block w-100" alt="фото компьютерного клуба">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="web/img/slider5_group.jpg" class="d-block w-100" alt="фото компьютерного клуба">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
         </div>
 
         <div class="slogan_block">
@@ -155,7 +209,9 @@
         </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
