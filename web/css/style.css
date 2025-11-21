@@ -18,8 +18,12 @@ li {
     list-style: none;
 }
 
+
 .text-center {
     text-align: center;
+}
+.text_right {
+    text-align: right;
 }
 .left_header {
     margin: 0px 280px 70px;
@@ -34,6 +38,9 @@ li {
 }
 .success_text {
     color: #4AFF86;
+}
+.blue_text {
+    color: #3A19FF;
 }
 
 .purple_header {
@@ -708,39 +715,6 @@ header nav {
 
 
 
-/* FOOTER */
-
-footer {
-    border-top: 6px solid #2E00FD;
-    padding-top: 20px;
-    margin-top: 300px;
-}
-.contacts {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 130px;
-
-    font-size: 30px;
-    letter-spacing: 2px;
-}
-.contact {
-    display: flex;
-    column-gap: 20px;
-    align-items: center;
-}
-.year_and_company {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    column-gap: 100px;
-    margin-top: 40px;
-
-    font-size: 28px;
-}
-
-
-
 
 
 
@@ -783,7 +757,7 @@ footer {
 .bookings__table__row {
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 25px;
 }
 
 .bookings__table__header {
@@ -793,6 +767,185 @@ footer {
     font-size: 30px;
     font-weight: 500;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* CLUB PAGE */
+
+.club_info {
+    margin-left: 250px;
+}
+.club h1 {
+    margin: 50px 0 0;
+}
+.pc_count {
+    max-width: 130px;
+    max-height: 70px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    padding: 10px 0;
+    background: linear-gradient(45deg, #EE014B 46%, #EC22FF 100%);
+
+    font-size: 31px;
+    text-align: center;
+}
+.pc_count_and_phone_number {
+    display: flex;
+    align-items: center;
+    column-gap: 160px;
+    
+}
+
+.zones h2 {
+    margin: 120px 0 50px;
+    font-size: 50px;
+}
+.zones {
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+}
+.zones_list {
+    font-weight: 500;
+    display: flex;
+    column-gap: 60px;
+}
+.zone {
+    max-width: 504px;
+    max-height: 930px;
+    width: 100%;
+    height: 100%;
+    border: 10px solid #3A19FF;
+    border-radius: 8px;
+    padding: 30px 40px 20px;
+}
+.zone_header {
+    font-size: 38px;
+}
+.zone_pccount, .pc_specs, .zone_tariffs {
+    font-size: 30px;
+}
+.zone_pccount {
+    margin-bottom: 20px;
+}
+.pc_specs p {
+    margin-bottom: 20px;
+}
+.zone_tariffs {
+    border-top: 6px solid white;
+}
+.tariff {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+.tariff:hover {
+    background-color: #3A19FF;
+}
+
+.booking_link {
+    margin-top: 80px;
+    align-self: center;
+    padding: 20px 34px;
+
+    border: 4px solid #1B0097;
+    border-radius: 6px;
+    background: linear-gradient(to right, #1B0097 0%, #2E00FD 50%, #1B0097 100%);
+    font-size: 30px;
+    font-weight: 500;
+
+    transition: 0.5s;
+}
+.booking_link:hover {
+    background: transparent;
+    color: #2E00FD;
+    border: 4px solid #2E00FD;
+}
+
+
+.gallery h2 {
+    font-size: 50px;
+    margin-top: 150px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
+    padding: 0 140px;
+    margin-top: 60px;
+}
+
+.images img {
+    transition: 0.4s;
+}
+.images img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* FOOTER */
+
+footer {
+    border-top: 6px solid #2E00FD;
+    padding-top: 20px;
+    margin-top: 300px;
+}
+.contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 130px;
+
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.contact {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.contact p {
+    margin-bottom: 0;
+}
+.year_and_company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 100px;
+    margin-top: 40px;
+
+    font-size: 28px;
+}
+.year_and_company p {
+    margin-bottom: 0;
+    line-height: 42px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
