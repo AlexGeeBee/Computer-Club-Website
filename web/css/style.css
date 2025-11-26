@@ -130,24 +130,21 @@ header nav {
 
 /* MAIN */
 
-.main_block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 978px;
-    /* padding: 0 20px; */
-    /* background-image: url("/web/img/slider1_group.jpg"); */
-}
-/* .main_block img {
+/* .main_block {
+    display: none;
+} */
+.main_block img {
     width: 38px;
     height: 99px;
     position: relative;
     top: -40px;
-} */
+}
 .main_header {
     position: absolute;
     top: 45%;
     left: 15%;
+    /* top: 400px;
+    left: 300px; */
     z-index: 2;
 }
 #main_header {
@@ -379,7 +376,9 @@ header nav {
     border-radius: 5px;
 
     margin-top: 130px;
-    padding: 45px 80px;
+    padding: 45px 14px;
+    max-width: 478px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,8 +399,9 @@ header nav {
 
 .auth_input {
     box-sizing: border-box;
-    width: 344px;
+    max-width: 344px;
     height: 51px;
+    width: 100%;
     margin-bottom: 50px;
 
     background-color: #FBFBFF;
@@ -434,8 +434,8 @@ header nav {
 
 .auth_button {
     margin-top: 60px;
-    width: 137px;
     height: 56px;
+    padding: 0 26px;
     color: #FBFBFF;
     background: linear-gradient(45deg, #EE014B, #ED0764 60%, #EA2DFC);
     font-size: 27px;
@@ -451,7 +451,6 @@ header nav {
     border: 3px solid #EE014B;
 }
 #register_button {
-    width: 344px;
     margin-top: 10px;
 }
 
@@ -729,10 +728,11 @@ header nav {
 .account {
     background-image: url('/web/img/account_background.jpg');
     padding: 0 150px;
+    min-height: 978px;
 }
 .account__data {
     display: flex;
-    column-gap: 220px;
+    column-gap: 14%;
     margin-top: 40px;
 
     text-wrap: nowrap;
@@ -752,6 +752,9 @@ header nav {
 
 .bookings__table {
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
 }
 
 .bookings__table__row {
@@ -767,7 +770,9 @@ header nav {
     font-size: 30px;
     font-weight: 500;
 }
-
+.account_footer {
+    margin-top: 0;
+}
 
 
 
@@ -957,22 +962,8 @@ footer {
 
 
 
-@media (max-width: 375px) {
 
-    
-    .question img {
-        width: 18px;
-        height: 18px;
-        margin-right: 8px;
-    }
-    .question p {
-        margin-left: 8px;
-    }
-    .white_header {
-        font-size: 50px;
-    }
 
-}
 
 
 
@@ -1004,8 +995,8 @@ footer {
 
     
     .contact img {
-        width: 56px;
-        height: 56px;
+        width: 54px;
+        height: 54px;
     }
     .contact {
         font-size: 21px;
@@ -1014,9 +1005,34 @@ footer {
     .year_and_company {
         font-size: 24px;
     }
+
+
+    .auth_header {
+        font-size: 46px;
+    }
 }
 
 
+
+
+
+
+
+/* @media (max-width: 1300px) {
+    .main_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 978px;
+        padding: 0 20px;
+    
+        background-image: url("/web/img/slider1_group.jpg");
+    }
+
+    .main_block-slider {
+        display: none;
+    }
+} */
 
 @media (max-width: 720px) {
     .main_block {
@@ -1104,6 +1120,8 @@ footer {
         justify-content: flex-start;
         row-gap: 20px;
         padding: 0 10px;
+
+        font-size: 26px;
     }
 
 
@@ -1140,5 +1158,105 @@ footer {
     }
     .question p {
         font-size: 23px;
+    }
+
+
+
+
+    /* CLUBS */
+    .club_cards {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    /* ACCOUNT */
+    .account {
+        padding: 0 50px;
+        background: none;
+    }
+    .account__data {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .account__data div {
+        column-gap: 10px;
+        font-size: 32px;
+    }
+    .bookings__table__header {
+        display: none;
+    }
+    .bookings__table__row {
+        flex-direction: column;
+        row-gap: 10px;
+        padding-bottom: 14px;
+        border-bottom: 4px solid white;
+    }
+    .bookings {
+        margin-bottom: 100px;
+    }
+
+
+
+
+
+
+
+    /* AUTH */
+
+    .auth_container main {
+        padding: 0 20px;
+    }
+    .auth_input {
+        font-size: 24px;
+    }
+    .auth_button {
+        font-size: 24px;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+
+    .white_header {
+        font-size: 45px;
+    }
+
+
+    /* ABOUT */
+
+    .question img {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+    .question p {
+        margin-left: 8px;
+    }
+    
+
+
+
+
+
+
+    /* ACCOUNT */
+
+    .account {
+        padding: 0 20px;
+    }
+    .account__data div {
+        font-size: 28px;
+    }
+
+
+    /* AUTH */
+
+    .auth_container main {
+        padding: 0 14px;
+    }
+    .auth {
+        padding: 45px 16px;
     }
 }
