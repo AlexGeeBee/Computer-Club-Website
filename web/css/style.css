@@ -8,16 +8,16 @@
     padding: 0;
     margin: 0;
 }
-
 body {
     background-color: #040F16;
     color: #fff;
+
+    /* overflow-x: hidden; */
 }
 
 li {
     list-style: none;
 }
-
 
 .text-center {
     text-align: center;
@@ -77,7 +77,6 @@ li {
 .mobile-nav {
     display: none;
 }
-
 a {
     text-decoration: none;
     color: #fff;
@@ -210,7 +209,7 @@ header {
 #info_img {
     width: 429px;
     height: 643px;
-    margin-top: 10px;
+    margin: 10px 0 30px;
 }
 
 .info_text p {
@@ -237,7 +236,6 @@ header {
 .advantage::before {
     content: "";
 
-    /* display: none; */
     opacity: 0;
 
     width: 100px;
@@ -255,7 +253,6 @@ header {
     text-shadow: 3px 3px 5px #9D9D9D;
 }
 .advantage:hover::before {
-    /* display: inline; */
     opacity: 1;
 }
 
@@ -611,7 +608,6 @@ header {
 }
 
 #date_input::-webkit-calendar-picker-indicator {
-    /* display: none !important; */
     background: url('/web/img/calendar.svg');
     background-size: cover;
     cursor: pointer;
@@ -672,7 +668,6 @@ header {
     padding: 0 60px;
 }
 .clubs_card {
-    width: 504px;
     height: 860px;
     display: flex;
     flex-direction: column;
@@ -768,6 +763,18 @@ header {
     justify-content: space-between;
     font-size: 25px;
 }
+.booking__data {
+    width: 150px;
+}
+.booking__time {
+    width: 160px;
+}
+.booking__club_address {
+    width: 600px;
+}
+.booking__tariff {
+    width: 115px;
+}
 
 .bookings__table__header {
     border-bottom: 4px solid white;
@@ -798,19 +805,18 @@ header {
     margin: 50px 0 0;
 }
 .pc_count {
-    max-width: 130px;
-    max-height: 70px;
-    width: 100%;
-    height: 100%;
     border-radius: 4px;
-    padding: 10px 0;
+    padding: 10px 26px;
     background: linear-gradient(45deg, #EE014B 46%, #EC22FF 100%);
 
     font-size: 31px;
     text-align: center;
+    text-wrap: nowrap;
 }
 .pc_count_and_phone_number {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
     align-items: center;
     column-gap: 160px;
     
@@ -1066,13 +1072,13 @@ footer {
     }
     .burger {
         position: relative;
-        right: 40px;
+        right: 20px;
         z-index: 3;
         cursor: pointer;
         display: block;
         border: none;
         background: transparent;
-        width: 40px;
+        width: 59px;
         height: 26px;
     }
     .burger::before,
@@ -1114,19 +1120,19 @@ footer {
         display: flex;
         flex-direction: column;
         row-gap: 16px;
-        padding: 100px 50px 0;
+        padding: 100px 30px 0;
         background: #040F16;
         list-style-type: none;
         transform: translateX(100%);
         transition: .3s;
-        width: 350px;
+        width: 290px;
         height: 100vh;
         text-align: right;
-        
     }
     .menu-item {
         color: white;
         font-size: 27px;
+        text-wrap: nowrap;
     }
 
     .burger-checkbox:checked ~ .menu-list {
@@ -1146,6 +1152,7 @@ footer {
     
     .main_header {
         margin: 0;
+        top: 27%;
     }
 
     #main_header {
@@ -1179,7 +1186,7 @@ footer {
         display: flex;
         flex-direction: column;
         margin-top: 70px;
-        padding: 0 12px;
+        padding: 0 40px;
     }
     .purple_header {
         font-size: 30px;
@@ -1268,8 +1275,41 @@ footer {
     .club_cards {
         grid-template-columns: 1fr;
     }
+    .club_card:hover,
+    .clubs_card:hover {
+        transform: none;
+        box-shadow: none;
+    }
 
 
+
+
+
+    /* CLUB PAGE */
+
+    .club_info {
+        margin-left: 100px;
+    }
+    .club_info h1 {
+        text-align: left;
+    }
+    .pc_count_and_phone_number {
+        column-gap: 100px;
+    }
+    .zones_list {
+        flex-wrap: wrap;
+        row-gap: 70px;
+    }
+    .images {
+        justify-content: center;
+    }
+    .images img {
+        width: 650px;
+        height: 433px;
+    }
+    .images img:hover {
+        transform: none;
+    }
 
     /* ACCOUNT */
     .account {
@@ -1289,7 +1329,7 @@ footer {
     }
     .bookings__table__row {
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 12px;
         padding-bottom: 14px;
         border-bottom: 4px solid white;
     }
@@ -1323,7 +1363,13 @@ footer {
     .white_header {
         font-size: 45px;
     }
-
+    #logo, #logo img {
+        width: 177px;
+        height: 86px;
+    }
+    .info_block-phone {
+        padding: 0 20px;
+    }
 
     /* ABOUT */
 
@@ -1339,6 +1385,71 @@ footer {
 
 
 
+    /* CLUBS */
+
+    .club_cards {
+        padding: 0;
+    }
+    .clubs_card {
+        border-width: 8px;
+        height: auto;
+    }
+    .clubs_card img {
+        width: 335px;
+    }
+    .clubs_card h2 {
+        font-size: 30px;
+    }
+
+    .clubs_zones p {
+        font-size: 30px;
+    }
+    .clubs_zone {
+        font-size: 27px;
+        width: 300px;
+    }
+    .clubs_card a {
+        padding: 14px 38px;
+    }
+
+
+
+    /* CLUB PAGE */
+
+    .club_info {
+        margin-left: 0;
+        padding: 0 20px;
+    }
+    .club_info h1 {
+        font-size: 42px;
+    }
+    .zones {
+        padding: 0 20px;
+    }
+    .zone {
+        max-height: none;
+        border-width: 8px;
+        padding: 30px 20px 20px;
+    }
+    .zone_header {
+        font-size: 35px;
+    }
+    .zone_pccount, .pc_specs, .zone_tariffs {
+        font-size: 29px;
+    }
+    .booking_link {
+        font-size: 27px;
+        padding: 18px 26px;
+    }
+    .images {
+        row-gap: 40px;
+    }
+    .images img {
+        width: 335px;
+        height: 223px;
+    }
+
+
 
 
 
@@ -1349,6 +1460,9 @@ footer {
     }
     .account__data div {
         font-size: 28px;
+    }
+    .booking__club_address {
+        width: auto;
     }
 
 
