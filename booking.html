@@ -10,7 +10,7 @@
     <header>
         <a id="logo" href="index.html"><img src="web/img/logo.svg" alt="Логотип"></a>
 
-        <nav>
+        <nav class="desktop-nav">
             <li><a class="nav_link" href="index.html">Главная</a></li>
             <li><a class="nav_link" href="clubs.html">Клубы</a></li>
             <li><a class="nav_link" href="about.html">О нас</a></li>
@@ -19,6 +19,18 @@
                 <span>/</span>
                 <a class="nav_link" href="register.html">Создать аккаунт</a>
             </li>
+        </nav>
+
+        <nav class="mobile-nav">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="index.html" class="menu-item nav_link">Главная</a><li>
+                <li><a href="clubs.html" class="menu-item nav_link">Клубы</a><li>
+                <li><a href="about.html" class="menu-item nav_link">О нас</a><li>
+                <li><a href="login.html" class="menu-item nav_link">Войти</a><li>
+                <li><a href="register.html" class="menu-item nav_link">Создать аккаунт</a><li></li>
+            </ul>
         </nav>
     </header>
 
@@ -32,12 +44,12 @@
                 <label for="club">Клуб</label>
 
                 <select name="club">
-                    <option value="Ст. метро Петроградская, ул. Ординарная, 20">Ст. метро Петроградская, ул. Ординарная, 20</option>
-                    <option value="Ст. метро Электросила, ул. Благодатная 40">Ст. метро Электросила, ул. Благодатная 40</option>
-                    <option value="Ст. метро Василеостровская, 13-я линия ВО, 30">Ст. метро Василеостровская, 13-я линия ВО, 30</option>
-                    <option value="Ст. метро Площадь Ленина, ул. Комсомола, 17">Ст. метро Площадь Ленина, ул. Комсомола, 17</option>
-                    <option value="Ст. метро Беговая, ул. Савушкина, 141">Ст. метро Беговая, ул. Савушкина, 141</option>
-                    <option value="Ст. метро Бухарестская, ул. Салова, 61">Ст. метро Бухарестская, ул. Салова, 61</option>
+                    <option value="Ст. метро Петроградская">Ст. м. Петроградская</option>
+                    <option value="Ст. метро Электросила">Ст. м. Электросила</option>
+                    <option value="Ст. метро Василеостровская">Ст. м. Василеостровская</option>
+                    <option value="Ст. метро Площадь Ленина">Ст. м. Площадь Ленина</option>
+                    <option value="Ст. метро Беговая">Ст. метро Беговая</option>
+                    <option value="Ст. метро Бухарестская">Ст. м. Бухарестская</option>
                 </select>
             </div>
 
@@ -129,5 +141,7 @@
             <p>GOGAME</p>
         </div>
     </footer>
+
+    <script src="/web/script/script.js"></script>
 </body>
 </html>

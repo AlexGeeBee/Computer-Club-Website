@@ -10,7 +10,7 @@
     <header>
         <a id="logo" href="index.html"><img src="web/img/logo.svg" alt="Логотип"></a>
 
-        <nav>
+        <nav class="desktop-nav">
             <li><a class="nav_link" href="index.html">Главная</a></li>
             <li><a class="nav_link" href="clubs.html">Клубы</a></li>
             <li><a class="nav_link active_nav" href="about.html">О нас</a></li>
@@ -19,6 +19,18 @@
                 <span>/</span>
                 <a class="nav_link" href="register.html">Создать аккаунт</a>
             </li>
+        </nav>
+
+        <nav class="mobile-nav">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="index.html" class="menu-item nav_link">Главная</a><li>
+                <li><a href="clubs.html" class="menu-item nav_link">Клубы</a><li>
+                <li><a href="about.html" class="menu-item nav_link active_nav">О нас</a><li>
+                <li><a href="login.html" class="menu-item nav_link">Войти</a><li>
+                <li><a href="register.html" class="menu-item nav_link">Создать аккаунт</a><li></li>
+            </ul>
         </nav>
     </header>
 
@@ -51,33 +63,39 @@
 
             <div class="questions">
                 <div class="question">
-                    <p>Можно ли приходить со своими девайсами?</p>
-                    <img src="/web/img/plus.svg" alt="Иконка плюса">
+                    <p class="question__text">Можно ли приходить со своими девайсами?</p>
+                    <img class="question__open" src="/web/img/plus.svg" alt="Иконка плюса">
+                    <p class="answer">Да, конечно. Мы заботимся о том, чтобы каждый посетитель нашей сети, чувствовал себя максимально комфортно. Поэтому, можете прийти и подключить свою мышь, клавиатуру или наушники. Только предварительно нужно предупредить об этом администратора.</p>
                 </div>
 
                 <div class="question">
-                    <p>Есть ли у вас клубные аккаунты?</p>
-                    <img src="/web/img/plus.svg" alt="Иконка плюса">
+                    <p class="question__text">Есть ли у вас клубные аккаунты?</p>
+                    <img class="question__open" src="/web/img/plus.svg" alt="Иконка плюса">
+                    <p class="answer">Конечно, у нас в наличии есть большой ассортимент клубных прокаченных аккаунтов, всех популярных игр, которые предустановлены на компьютеры, воспользоваться аккаунтами вы можете абсолютно бесплатно.</p>
                 </div>
 
                 <div class="question">
-                    <p>Можно ли прийти со своей едой?</p>
-                    <img src="/web/img/plus.svg" alt="Иконка плюса">
+                    <p class="question__text">Можно ли прийти со своей едой?</p>
+                    <img class="question__open" src="/web/img/plus.svg" alt="Иконка плюса">
+                    <p class="answer">К сожалению, посещение клуба со своими едой и алкоголем запрещено. Вы можете не переживать по поводу этого, потому что у нас очень широкий ассортимент напитков и закусок.</p>
                 </div>
 
                 <div class="question">
-                    <p>Какой режим работы клубов?</p>
-                    <img src="/web/img/plus.svg" alt="Иконка плюса">
+                    <p class="question__text">Какой режим работы клубов?</p>
+                    <img class="question__open" src="/web/img/plus.svg" alt="Иконка плюса">
+                    <p class="answer">Мы открыты и работаем круглосуточно, без перерывов и выходных.</p>
                 </div>
 
                 <div class="question">
-                    <p>Есть ли у вас гостевые аккаунты с играми?</p>
-                    <img src="/web/img/plus.svg" alt="Иконка плюса">
+                    <p class="question__text">Есть ли у вас гостевые аккаунты с играми?</p>
+                    <img class="question__open" src="/web/img/plus.svg" alt="Иконка плюса">
+                    <p class="answer">Мы предлагаем более 2000 игровых аккаунтов для различных онлайн-игр, которые вы можете использовать совершенно бесплатно. Стоимость гостевого аккаунта — 25₽/час.</p>
                 </div>
 
                 <div class="question">
-                    <p>Можно ли несовершеннолетним быть в клубе после 22:00?</p>
-                    <img src="/web/img/plus.svg" alt="Иконка плюса">
+                    <p class="question__text">Можно ли несовершеннолетним быть в клубе после 22:00?</p>
+                    <img class="question__open" src="/web/img/plus.svg" alt="Иконка плюса">
+                    <p class="answer">Мы не устанавливаем запрет на присутствие несовершеннолетних посетителей в клубе после 22:00, однако уведомляем о том, что согласно Федеральному закону №124 от 24.07.1998 года, родители или опекуны могут нести ответственность в случае его нарушения.</p>
                 </div>
             </div>
         </div>
@@ -106,5 +124,7 @@
             <p>GOGAME</p>
         </div>
     </footer>
+
+    <script src="/web/script/script.js"></script>
 </body>
 </html>

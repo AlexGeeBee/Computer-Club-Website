@@ -11,7 +11,7 @@
         <header>
         <a id="logo" href="index.html"><img src="web/img/logo.svg" alt="Логотип"></a>
 
-        <nav>
+        <nav class="desktop-nav">
             <li><a class="nav_link" href="index.html">Главная</a></li>
             <li><a class="nav_link" href="clubs.html">Клубы</a></li>
             <li><a class="nav_link" href="about.html">О нас</a></li>
@@ -20,6 +20,18 @@
                 <span>/</span>
                 <a class="nav_link" href="register.html">Создать аккаунт</a>
             </li>
+        </nav>
+
+        <nav class="mobile-nav">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="index.html" class="menu-item nav_link">Главная</a><li>
+                <li><a href="clubs.html" class="menu-item nav_link">Клубы</a><li>
+                <li><a href="about.html" class="menu-item nav_link">О нас</a><li>
+                <li><a href="login.html" class="menu-item nav_link active_nav">Войти</a><li>
+                <li><a href="register.html" class="menu-item nav_link">Создать аккаунт</a><li></li>
+            </ul>
         </nav>
     </header>
 
@@ -41,5 +53,7 @@
         </div>
     </main>
     </div>
+
+    <script src="/web/script/script.js"></script>
 </body>
 </html>

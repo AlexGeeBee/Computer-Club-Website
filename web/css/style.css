@@ -11,8 +11,6 @@
 body {
     background-color: #040F16;
     color: #fff;
-
-    /* overflow-x: hidden; */
 }
 
 li {
@@ -61,7 +59,6 @@ li {
 
 
 .text_default {
-    /* margin-top: 40px; */
     margin-bottom: 50px;
 
     font-size: 30px;
@@ -146,8 +143,6 @@ header {
     position: absolute;
     top: 45%;
     left: 15%;
-    /* top: 400px;
-    left: 300px; */
     z-index: 1;
 }
 #main_header {
@@ -314,8 +309,6 @@ header {
     color: #EE014B;
 }
 .club_link {
-    /* width: 200px;
-    height: 60px; */
     box-sizing: border-box;
     padding: 12px 21px;
     border-radius: 6px;
@@ -340,7 +333,6 @@ header {
     font-size: 28px;
     padding: 13px 21px;
     background: linear-gradient(45deg, #EE014B, #ED0764 50%, #EA2DFC);
-    /* background-color: #EE014B; */
     border-radius: 6px;
     transition: 0.2s;
 }
@@ -368,7 +360,6 @@ header {
     height: 1080px;
     background: no-repeat linear-gradient(to bottom, rgb(5, 15, 22, 1) 13%, rgba(0, 0, 0, 0) 63%, rgba(4, 15, 22, 1) 100%),
     url("../img/auth_background.jpg");
-    /* background: url("../img/auth_background.jpg"); */
 }
 .auth_container main {
     display: flex;
@@ -504,6 +495,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     position: relative;
 
     border: 3px solid transparent;
@@ -532,15 +524,24 @@ header {
 .question:hover::before {
     opacity: 1;
 }
-.question p {
+.question__text {
     font-weight: 500;
     font-size: 31px;
     letter-spacing: 1px;
     margin-left: 25px;
 }
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0 60px 0 25px;
+    font-size: 27px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
 .question img {
     margin-right: 25px;
     margin-left: 10px;
+    transition: 0.5s;
 }
 
 
@@ -611,8 +612,8 @@ header {
     background: url('/web/img/calendar.svg');
     background-size: cover;
     cursor: pointer;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
 }
 
 .booking_form option {
@@ -1113,7 +1114,7 @@ footer {
         transition: bottom .3s, transform .3s .15s;
     }
     .menu-list {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         z-index: 2;
@@ -1240,7 +1241,6 @@ footer {
         padding: 0 12px;
     }
     .about_block {
-        /* flex-wrap: wrap; */
         flex-direction: column;
     }
     .about_block_2 {
@@ -1310,6 +1310,32 @@ footer {
     .images img:hover {
         transform: none;
     }
+
+
+
+
+    /* BOOKING */
+
+    .booking_container {
+        padding: 0 30px;
+    }
+    .booking_input select, .booking_input input {
+        font-size: 24px;
+    }
+    .date_time {
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+    }
+    .datetime_input {
+        width: auto;
+    }
+    #time_input_div::after,
+    .booking_select::after {
+        left: 90.5%;
+    }
+
+
 
     /* ACCOUNT */
     .account {
@@ -1449,6 +1475,21 @@ footer {
         height: 223px;
     }
 
+
+
+
+    /* BOOKING */
+
+    .booking_input select, .booking_input input {
+        padding: 0 10px;
+    }
+    #time_input_div::after, .booking_select::after {
+        background-image: url('/web/img/mobile-arrow.svg');
+        width: 30px;
+        height: 12px;
+        left: 87%;
+        bottom: 46px;
+    }
 
 
 
