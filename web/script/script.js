@@ -29,8 +29,10 @@ questions.forEach((question) => {
 document.querySelector(".burger-checkbox").addEventListener("change", (e) => {
     if (e.target.checked) {
         document.body.style.overflow = 'hidden';
+        document.querySelector('main').style.opacity = 0.3;
     }
     else {
         document.body.style.overflow = null;
+        document.querySelector('main').style.opacity = 1;
     }
 });
