@@ -2,7 +2,6 @@ let questions = document.querySelectorAll('.question');
 
 questions.forEach((question) => {
     question.addEventListener('click', () => {
-
         let answer = question.lastElementChild;
 
         if (answer.style.maxHeight) {
@@ -24,7 +23,6 @@ questions.forEach((question) => {
 
     });
 })
-
 
 document.querySelector(".burger-checkbox").addEventListener("change", (e) => {
     if (e.target.checked) {

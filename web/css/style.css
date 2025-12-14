@@ -593,7 +593,7 @@ header {
 }
 .booking_select::after {
     content: '';
-    background-image: url('/web/img/arrow.svg');
+    background-image: url('../img/arrow.svg');
     width: 42px;
     height: 18px;
     position: relative;
@@ -604,7 +604,7 @@ header {
 
 #time_input_div:after {
     content: '';
-    background-image: url('/web/img/arrow.svg');
+    background-image: url('../img/arrow.svg');
     width: 42px;
     height: 18px;
     position: relative;
@@ -614,7 +614,7 @@ header {
 }
 
 #date_input::-webkit-calendar-picker-indicator {
-    background: url('/web/img/calendar.svg');
+    background: url('../img/calendar.svg');
     background-size: cover;
     cursor: pointer;
     height: 35px;
@@ -733,7 +733,7 @@ header {
 /* ACCOUNT */
 
 .account {
-    background-image: url('/web/img/account_background.jpg');
+    background-image: url('../img/account_background.jpg');
     padding: 0 150px;
     min-height: 978px;
 }
@@ -1401,7 +1401,7 @@ footer {
     .main_block {
         display: block;
         height: 720px;
-        background: url('/web/img/mobile-bgi.png');
+        background: url('../img/mobile-bgi.png');
     }
     .main_header {
         top: 36%;
@@ -1505,7 +1505,7 @@ footer {
         padding: 0 10px;
     }
     #time_input_div::after, .booking_select::after {
-        background-image: url('/web/img/mobile-arrow.svg');
+        background-image: url('../img/mobile-arrow.svg');
         width: 30px;
         height: 12px;
         left: 87%;
