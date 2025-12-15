@@ -432,17 +432,17 @@ header {
 }
 
 .auth_button {
+    box-sizing: border-box;
     margin-top: 60px;
-    height: 56px;
-    padding: 0 26px;
+    padding: 12px 26px;
     color: #FBFBFF;
     background: linear-gradient(45deg, #EE014B, #ED0764 60%, #EA2DFC);
     font-size: 27px;
     font-weight: 600;
-    border: none;
+    border: 3px solid transparent;
     border-radius: 6px;
     cursor: pointer;
-    transition: 0.15s;
+    transition: 0.2s;
 }
 .auth_button:hover {
     background: transparent;
